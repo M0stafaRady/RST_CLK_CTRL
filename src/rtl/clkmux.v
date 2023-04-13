@@ -1,8 +1,12 @@
 /*
-    Clock Multiplexors:
+    Glitch-free Clock Multiplexors:
         - clkmux_2x1
         - clkmux_4x1
-        
+    
+    The multiplexors are capable of switching between clocks from 
+    different sources. They are based on the following old EDN article: 
+    https://www.edn.com/techniques-to-make-clock-switching-glitch-free/
+    
     Mohamed Shalan (mshalan@aucegypt.edu)
 */
 
