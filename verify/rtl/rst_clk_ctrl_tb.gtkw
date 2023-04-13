@@ -1,0 +1,78 @@
+[*]
+[*] GTKWave Analyzer v3.3.107 (w)1999-2020 BSI
+[*] Thu Apr 13 09:49:57 2023
+[*]
+[dumpfile] "/Users/shalan/work/FMUL/repo/rst_clk_ctrl_tb.vcd"
+[dumpfile_mtime] "Wed Apr 12 20:36:50 2023"
+[dumpfile_size] 1091030
+[savefile] "/Users/shalan/work/FMUL/repo/rst_clk_ctrl_tb.gtkw"
+[timestart] 0
+[size] 2805 1313
+[pos] -1 -1
+*-22.859320 39370500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] rst_clk_ctrl_tb.
+[treeopen] rst_clk_ctrl_tb.muv.
+[treeopen] rst_clk_ctrl_tb.muv.PoR.
+[sst_width] 193
+[signals_width] 141
+[sst_expanded] 1
+[sst_vpaned_height] 408
+@28
+rst_clk_ctrl_tb.clk_ref
+[color] 5
+rst_clk_ctrl_tb.xrst_n
+rst_clk_ctrl_tb.por_n
+rst_clk_ctrl_tb.rst_n
+[color] 2
+rst_clk_ctrl_tb.clk
+@200
+-MUX0
+@28
+rst_clk_ctrl_tb.muv.CLKMUX0.clk1
+rst_clk_ctrl_tb.muv.CLKMUX0.clk2
+rst_clk_ctrl_tb.muv.CLKMUX0.clko
+rst_clk_ctrl_tb.muv.CLKMUX0.sel
+@200
+-MUX1
+@28
+rst_clk_ctrl_tb.muv.CLKMUX1.clk1
+rst_clk_ctrl_tb.muv.CLKMUX1.clk2
+rst_clk_ctrl_tb.muv.CLKMUX1.clko
+rst_clk_ctrl_tb.muv.CLKMUX1.sel
+@200
+-RST_SYNC
+@28
+rst_clk_ctrl_tb.muv.RST_SYNC.clk
+rst_clk_ctrl_tb.muv.RST_SYNC.rst_n
+rst_clk_ctrl_tb.muv.RST_SYNC.srst_n
+@200
+-PLL
+@28
+rst_clk_ctrl_tb.muv.PLL.en
+rst_clk_ctrl_tb.muv.PLL.trim[1:0]
+rst_clk_ctrl_tb.muv.PLL.clk_int
+rst_clk_ctrl_tb.muv.PLL.clk_out
+rst_clk_ctrl_tb.muv.PLL.clk_ref
+@200
+-CTRL
+@28
+rst_clk_ctrl_tb.muv.sel_pll
+rst_clk_ctrl_tb.muv.sel_8mhz
+rst_clk_ctrl_tb.muv.sel_rosc[1:0]
+rst_clk_ctrl_tb.muv.clk_div[1:0]
+@200
+-PoR
+@28
+rst_clk_ctrl_tb.muv.PoR.clk_128mhz
+rst_clk_ctrl_tb.muv.PoR.clk_64mhz
+rst_clk_ctrl_tb.muv.PoR.clk_32mhz
+rst_clk_ctrl_tb.muv.PoR.clk_16mhz
+rst_clk_ctrl_tb.muv.PoR.clk_8mhz
+rst_clk_ctrl_tb.muv.PoR.CLKMUX.clko1
+rst_clk_ctrl_tb.muv.PoR.CLKMUX.clko2
+@29
+rst_clk_ctrl_tb.muv.PoR.CLKMUX.rst_n
+@28
+rst_clk_ctrl_tb.muv.PoR.clk_out
+[pattern_trace] 1
+[pattern_trace] 0
