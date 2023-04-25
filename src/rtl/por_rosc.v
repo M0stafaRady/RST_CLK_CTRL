@@ -6,10 +6,6 @@
     Ring Oscillator 
         - A fixed clok output (8MHz)
         - A variable frequency clock output, 128/64/32/16 MHz (Selectable)
-        
-    clocks:
-        - clk_128mhz (7.8ns)
-        - clk_500khz (2000ns)
             
     Author: Mohamed Shalan (mshalan@aucegypt.edu)
 */
@@ -47,7 +43,7 @@ module por_rosc #(parameter LENGTH=16) (
     (* keep *) sky130_fd_sc_hs__clkdlyinv5sd2_1    DLYINV_5 ( .A(dly[5]), .Y(dly[6]) );
     (* keep *) sky130_fd_sc_hs__clkdlyinv5sd2_1    DLYINV_6 ( .A(dly[6]), .Y(dly[7]) );
     (* keep *) sky130_fd_sc_hs__clkbuf_8           CLKBUF_0 ( .A(dly[7]), .X(fb_out) );
-    (* keep *) sky130_fd_sc_hs__clkbuf_8           CLKBUF_1 ( .A(fb_out), .X(clk_128mhz) );
+    (* keep *) sky130_fd_sc_hs__clkbuf_4           CLKBUF_1 ( .A(fb_out), .X(clk_128mhz) );
 
 `endif
     // Clock Divider
