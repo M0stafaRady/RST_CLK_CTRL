@@ -1,10 +1,10 @@
-# Reset and Clock Controller for SoC Designs
+# Add digital Reset and Clock Controller for SoC Designs
 This repo contains a hard IP for the Sky130 technology that can be used to manage the clocking and resetting for a simple SoC design (e.g., a small MCU). 
 ## Features:
 This IP provides the following features:
 - On-chip Power on Reset (PoR). 
 - External Reset Synchronization.
-- Frequency Multiplier (8X) for external clock source.
+- Frequency Multiplier (x8) for external clock source.
 - On-chip Ring Oscillator.
 - Dynamic Clock Switching.
 - Dynamic Frequency Scaling.
