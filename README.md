@@ -1,4 +1,4 @@
-# Add digital Reset and Clock Controller for SoC Designs
+# All digital Reset and Clock Controller for SoC Designs
 This repo contains a hard IP for the Sky130 technology that can be used to manage the clocking and resetting for a simple SoC design (e.g., a small MCU). 
 ## Features:
 This IP provides the following features:
@@ -25,3 +25,6 @@ This IP provides the following features:
 | clk       | output    | wire       | System Clock            |
 | rst_n     | output    | wire       | System Reset (Active-low)            |
 | por_n     | output    | wire       | Power on Reset (Active-low)            |
+
+## The Internals
+<img src="./docs/rst_clk_ctrl_int.png" alt= “” width="100%" height="100%">
