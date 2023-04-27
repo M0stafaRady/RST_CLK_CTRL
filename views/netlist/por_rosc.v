@@ -1,3 +1,4 @@
+`timescale          1ns/1ps
 module por_rosc (clk_8mhz,
     clk_out,
     fb_in,

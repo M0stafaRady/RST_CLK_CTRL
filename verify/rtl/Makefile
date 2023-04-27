@@ -2,7 +2,7 @@
 
 # Set the simulation tool and options
 SIM_TOOL = vcs  
-SIM_OPTIONS = -sverilog +define+FUNCTIONAL +define+UNIT_DELAY=#1
+SIM_OPTIONS = -sverilog +define+FUNCTIONAL -debug_access+all  +define+VCS +define+RTL_SIM +define+UNIT_DELAY=#1 
 
 PWD=$(shell pwd)
 
@@ -27,12 +27,12 @@ SIM_OUT_DIR = sim
 SIM_OUT = $(SIM_OUT_DIR)/simv
 
 # Default target
-all: sim
+all: sim run
 
 # Target to build the simulation executable
 sim: $(RTL_SRC) $(TB_SRC)
 	mkdir -p $(SIM_OUT_DIR)
-	$(SIM_TOOL)  $(SIM_OPTIONS) $(PDK_SRC) -o $(SIM_OUT) $(RTL_SRC)  $(TB_SRC)
+	$(SIM_TOOL)  $(SIM_OPTIONS) -o $(SIM_OUT) $(RTL_SRC)  $(TB_SRC)
 
 # Target to run the simulation
 run: sim
@@ -40,5 +40,5 @@ run: sim
 
 # Target to clean up the simulation files
 clean:
-	rm -rf $(SIM_OUT_DIR)
+	rm -rf $(SIM_OUT_DIR) AN.DB/ csrc/ *.vcd *.vpd ucli.key *.log
 

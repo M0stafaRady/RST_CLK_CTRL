@@ -5,7 +5,7 @@ module rst_clk_ctrl_tb;
     reg        pll_en;
     reg        sel_8mhz;
     reg        sel_8x;
-    reg        sel_pll;
+    reg        sel_pll =0;
     reg [1:0]  sel_rosc;
     reg [1:0] 	pll_trim;
     reg [1:0]  clk_div;
@@ -13,10 +13,14 @@ module rst_clk_ctrl_tb;
     wire        rst_n;
     wire        por_n;
 
-
     initial begin
-        $dumpfile("rst_clk_ctrl_tb.vcd");
-        $dumpvars;
+        `ifdef VCS
+            $vcdplusfile("rst_clk_ctrl_tb.vpd");
+            $vcdpluson();
+        `else 
+            $dumpfile ("rst_clk_ctrl_tb.vcd");
+            $dumpvars ;
+        `endif
     end
 
     rst_clk_ctrl muv (

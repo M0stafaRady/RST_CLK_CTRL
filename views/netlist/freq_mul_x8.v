@@ -1,3 +1,4 @@
+`timescale          1ns/1ps
 module freq_mul_x8 (clk_out,
     clk_ref,
     en,

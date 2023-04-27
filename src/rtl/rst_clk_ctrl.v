@@ -31,6 +31,8 @@ module rst_clk_ctrl(
 
 
     freq_mul_x8 PLL (
+        .VGND(0),
+        .VPWR(1),
         .clk_ref(clk_ref),
         .rst_n(rst_n),
         .clk_out(clk_pll),
@@ -41,6 +43,8 @@ module rst_clk_ctrl(
     );
 
     por_rosc PoR (
+        .VGND(0),
+        .VPWR(1),
         .rst_n(rst_n),          
         .fb_in(por_fb),          
         .zero(tielo),           
@@ -49,7 +53,7 @@ module rst_clk_ctrl(
         .clk_8mhz(clk_8mhz),       
         .clk_out(clk_rosc),        
         .por_n(por_n),          
-        .fb_out(por_fb)          
+        .fb_out(por_fb)         
     );
 
     // Reset Synchonizer
