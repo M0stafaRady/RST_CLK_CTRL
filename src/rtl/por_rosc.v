@@ -47,7 +47,7 @@ module por_rosc #(parameter LENGTH=16) (
 
 `endif
     // Clock Divider
-    reg [8:1]   clk_div = 0;    // The initialization is needed only for simulation
+    (* keep *) reg [8:1]   clk_div = 0;    // The initialization is needed only for simulation
     wire        clk_64mhz  = clk_div[1];
     wire        clk_32mhz  = clk_div[2];
     wire        clk_16mhz  = clk_div[3];
